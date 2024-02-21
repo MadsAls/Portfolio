@@ -17,19 +17,57 @@ body {
     // width: 25%;
     // width: 5vh;
     width: 2.8vw;
+    fill: $hvid;
 }
+
+.logo:hover {
+    fill: #CAA052;
+}
+
+#logo {
+    fill: #CAA052;
+
+}
+
+
 
 .ikon {
     width: 1.8vw;
 }
 
 .pil {
+    margin: auto;
+    margin-top: 16vh;
+}
+
+p {
+    font: 24px;
+    color: $hvid;
+}
+
+.knap {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    text-decoration: none;
+    color: $hvid;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    padding: 7px 10px 7px 10px;
+    background-color: $gul;
+    border-radius: 10px;
+    border: 2px solid $gul;
+
+    width: 16%;
 }
+
+.knap:hover {
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid $gul;
+    color: $gul;
+}
+
 
 h1 {
     font-size: 96px;
@@ -37,9 +75,15 @@ h1 {
     font-weight: 900;
     color: rgb(0, 0, 0, 0);
     -webkit-text-stroke: 5px rgb(255, 255, 255);
-    
-    h1::first-letter { /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
+
+    h1::first-letter {
+        /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
         -webkit-text-stroke: 5px #CAA052;
         color: rgb(0, 0, 0, 0);
-      }
+    }
+}
+
+h2 {
+    font-size: 40px;
+    color: $hvid;
 }

@@ -20,14 +20,26 @@ main {
         
         .content{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             // align-items: center;
             flex-direction: column;
 
             width: 50%;
-            height: 50vh;
+            height: 60vh;
 
             // background-color: rgb(43, 74, 74);
+
+            .knap {
+                margin-top: 2vw;
+            }
+
+            p {
+                width: 50%;
+            }
+
+            span {
+                margin-left: 4.5vw;
+            }
         }
 
         .trekant{
@@ -35,9 +47,14 @@ main {
             z-index: -1;
             background-color: $sort;
             width: 50%;
-            height: 25%;
+            height: 50%;
 
-            background-color: rgb(44, 68, 60);
+            top: 0;
+            left: 0;
+
+            background-color: $sort;
+
+            // background-color: rgb(44, 68, 60);
 
         }
 
@@ -50,7 +67,7 @@ main {
 
             top: 0;
             right: 0;
-            
+
             background-attachment: fixed; /*Virker ikke*/
         }
     }
