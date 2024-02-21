@@ -19,46 +19,39 @@ body {
     width: 2.8vw;
     fill: $hvid;
 }
-
 .logo:hover {
     fill: #CAA052;
 }
 
-#logo {
-    fill: #CAA052;
-
-}
-
-
-
 .ikon {
     width: 1.8vw;
+    fill: $hvid;
 }
+.ikon:hover {
+    fill: #CAA052;
+}
+
 
 .pil {
     margin: auto;
-    margin-top: 16vh;
+    margin-top: 10vh;
 }
 
-p {
-    font: 24px;
-    color: $hvid;
-}
 
 .knap {
     display: flex;
     justify-content: center;
     align-items: center;
 
+    font-family: "Inter", sans-serif;
     text-decoration: none;
     color: $hvid;
     font-size: 24px;
-    font-family: "Roboto", sans-serif;
     padding: 7px 10px 7px 10px;
     background-color: $gul;
     border-radius: 10px;
     border: 2px solid $gul;
-
+    
     width: 16%;
 }
 
@@ -68,22 +61,30 @@ p {
     color: $gul;
 }
 
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font: 24px;
+    color: $hvid;
+}
 
 h1 {
     font-size: 96px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 900;
     color: rgb(0, 0, 0, 0);
     -webkit-text-stroke: 5px rgb(255, 255, 255);
+    letter-spacing: 8px;
 
-    h1::first-letter {
-        /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
-        -webkit-text-stroke: 5px #CAA052;
-        color: rgb(0, 0, 0, 0);
-    }
+    // h1::first-letter { //Virker ikke 
+    //     /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
+    //     -webkit-text-stroke: 5px #CAA052;
+    //     color: rgb(0, 0, 0, 0);
+    // }
 }
 
 h2 {
+    font-family: "Inter", sans-serif;
     font-size: 40px;
     color: $hvid;
 }

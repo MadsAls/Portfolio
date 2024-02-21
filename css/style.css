@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,32 +23,28 @@ body {
   fill: #CAA052;
 }
 
-#logo {
-  fill: #CAA052;
-}
-
 .ikon {
   width: 1.8vw;
+  fill: white;
+}
+
+.ikon:hover {
+  fill: #CAA052;
 }
 
 .pil {
   margin: auto;
-  margin-top: 16vh;
-}
-
-p {
-  font: 24px;
-  color: white;
+  margin-top: 10vh;
 }
 
 .knap {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   color: white;
   font-size: 24px;
-  font-family: "Roboto", sans-serif;
   padding: 7px 10px 7px 10px;
   background-color: #CAA052;
   border-radius: 10px;
@@ -61,20 +58,24 @@ p {
   color: #CAA052;
 }
 
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font: 24px;
+  color: white;
+}
+
 h1 {
   font-size: 96px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 900;
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 5px rgb(255, 255, 255);
-}
-h1 h1::first-letter {
-  /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
-  -webkit-text-stroke: 5px #CAA052;
-  color: rgba(0, 0, 0, 0);
+  letter-spacing: 8px;
 }
 
 h2 {
+  font-family: "Inter", sans-serif;
   font-size: 40px;
   color: white;
 }
@@ -118,6 +119,9 @@ header nav ul li a {
   text-decoration: none;
   color: white;
 }
+header nav ul li a:hover {
+  color: #CAA052;
+}
 header nav .media_ikoner {
   display: flex;
   justify-content: space-between;
@@ -146,6 +150,7 @@ main #home_section .content {
   flex-direction: column;
   width: 50%;
   height: 60vh;
+  margin-top: 10vh;
 }
 main #home_section .content .knap {
   margin-top: 2vw;
@@ -153,8 +158,11 @@ main #home_section .content .knap {
 main #home_section .content p {
   width: 50%;
 }
-main #home_section .content span {
+main #home_section .content .andersen_afstand {
   margin-left: 4.5vw;
+}
+main #home_section .content .bugstavs_farve {
+  -webkit-text-stroke: 5px #CAA052;
 }
 main #home_section .trekant {
   position: absolute;
@@ -171,5 +179,6 @@ main #home_section .baugrunds_billede {
   z-index: -2;
   top: 0;
   right: 0;
-  background-attachment: fixed; /*Virker ikke*/
+  background-attachment: fixed;
+  /*Virker ikke*/
 }/*# sourceMappingURL=style.css.map */
