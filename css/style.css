@@ -1,13 +1,127 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
 }
 
-section {
-  background-color: #caa052;
+.logo {
+  width: 2.8vw;
+}
+
+.ikon {
+  width: 1.8vw;
+}
+
+.pil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 96px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 5px rgb(255, 255, 255);
+}
+h1 h1::first-letter { /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
+  -webkit-text-stroke: 5px #CAA052;
+  color: rgba(0, 0, 0, 0);
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 10vw;
+  height: 100%;
+  background-color: rgba(192, 100, 100, 0.3);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  width: 75%;
+  background-color: rgba(128, 78, 123, 0.3);
+}
+header nav hr {
+  width: 7vw;
+  top: 12%;
+}
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5vh;
+}
+header nav ul li {
+  display: flex;
+  justify-content: start;
+}
+header nav ul li a {
+  font-size: 1.5vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /*skal ændres*/
+  text-decoration: none;
+  color: white;
+}
+header nav .media_ikoner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main #home_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+main #home_section .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50vh;
+}
+main #home_section .trekant {
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  width: 50%;
+  height: 25%;
+  background-color: rgb(44, 68, 60);
+}
+main #home_section .baugrunds_billede {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  background-attachment: fixed; /*Virker ikke*/
 }/*# sourceMappingURL=style.css.map */
