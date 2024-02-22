@@ -12,6 +12,10 @@ body {
     background-color: $sort;
 }
 
+.maa {
+    width: 80%;
+}
+
 .logo_box {
     // width: 50px;
     // width: 25%;
@@ -35,12 +39,11 @@ body {
     }
 }
 
-
 .pil {
+    padding-top: 10vh; /*Slet*/
     margin: auto;
-    margin-top: 10vh;
+    // margin-top: 10vh; /*Set den til*/
 }
-
 
 .knap {
     display: flex;
@@ -89,7 +92,7 @@ h1 {
 
 h2 {
     font-family: "Inter", sans-serif;
-    font-size: 40px;
+    font-size: 32px;
     color: $hvid;
 }
 

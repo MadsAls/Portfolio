@@ -14,6 +14,10 @@ body {
   background-color: #171717;
 }
 
+.maa {
+  width: 80%;
+}
+
 .logo_box {
   width: 2.8vw;
   fill: white;
@@ -33,8 +37,8 @@ body {
 }
 
 .pil {
+  padding-top: 10vh; /*Slet*/
   margin: auto;
-  margin-top: 10vh;
 }
 
 .knap {
@@ -76,7 +80,7 @@ h1 {
 
 h2 {
   font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   color: white;
 }
 
@@ -118,21 +122,24 @@ header nav {
 }
 header nav hr {
   width: 7vw;
-  top: 12%;
+  margin: auto;
 }
 header nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: center;
+  height: 85%;
   gap: 5vh;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
 }
 header nav ul li {
   display: flex;
   justify-content: start;
 }
 header nav ul li a {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /*skal ændres*/
   text-decoration: none;
   color: white;
@@ -162,22 +169,21 @@ main #home_section {
   align-items: center;
   width: 100%;
   height: 105vh;
-}
-main #home_section hr {
-  width: 100%;
-  margin-top: 12%;
-  color: rgba(255, 255, 255, 0.2);
+  border-bottom: solid 2px white;
 }
 main #home_section .home_content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 60vh;
-  margin-top: 10vh;
+  margin-top: 12vh;
 }
-main #home_section .home_content .knap {
-  margin-top: 2vw;
+main #home_section .home_content h1 {
+  width: 80%;
+}
+main #home_section .home_content .bugstavs_farve {
+  -webkit-text-stroke: 5px #CAA052;
 }
 main #home_section .home_content p {
   width: 60%;
@@ -185,8 +191,8 @@ main #home_section .home_content p {
 main #home_section .home_content .andersen_afstand {
   margin-left: 5.2vw;
 }
-main #home_section .home_content .bugstavs_farve {
-  -webkit-text-stroke: 5px #CAA052;
+main #home_section .home_content .knap {
+  margin-top: 2vw;
 }
 main #home_section .billede_overlay {
   position: absolute;
@@ -205,6 +211,11 @@ main #home_section .baugrunds_billede {
   right: 0;
   background-attachment: fixed;
   /*Virker ikke*/
+}
+main #home_section hr {
+  width: 100%;
+  margin-top: auto;
+  color: rgba(255, 255, 255, 0.2);
 }
 main #omMig_section {
   display: flex;
@@ -227,6 +238,7 @@ main #omMig_section .omMig_content .omMig {
   align-items: center;
   width: 100%;
   height: 50vh;
+  border-bottom: solid 2px white;
 }
 main #omMig_section .omMig_content .omMig .omMig_tekst {
   display: flex;
@@ -283,11 +295,12 @@ main #programmer_section .programmer_billede {
 }
 main #programmer_section .programmer_content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 60%;
   height: 100%;
+  gap: 10%;
 }
 main #programmer_section .programmer_content .programmer_ikoner {
   display: flex;
@@ -296,7 +309,7 @@ main #programmer_section .programmer_content .programmer_ikoner {
 main #programmer_section .programmer_content .programmer_ikoner img {
   width: 80px;
 }
-main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box {
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,14 +318,14 @@ main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon
   gap: 2.5vh;
   width: 19%;
 }
-main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box .ikon_box {
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks .ikon_boks {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1vh;
 }
-main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box p {
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks p {
   text-align: center;
 }
 main #projekter_section {

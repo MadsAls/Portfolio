@@ -28,24 +28,29 @@ header {
             // position: absolute;
 
             width: 7vw;
-
-            top: 12%;
+            // top: 12%;
+            margin: auto;
         }
 
         ul{
             display: flex;
             flex-direction: column;
             align-items: start;
-            justify-content: start;
+            justify-content: center;
+
+            height: 85%;
 
             gap: 5vh;
+
+            border-top: solid 2px $hvid;
+            border-bottom: solid 2px $hvid;
 
             li{
                 display: flex;
                 justify-content: start;
 
                 a{
-                    font-size: 1.5vw;
+                    font-size: 1.2vw;
                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*skal ændres*/
                     text-decoration: none;
                     color: $hvid;
