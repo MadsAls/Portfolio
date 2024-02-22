@@ -62,9 +62,9 @@ body {
 }
 
 p {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif; /*find anden font*/ 
     font-weight: 300;
-    font: 24px;
+    font-size: 18px;
     color: $hvid;
 }
 
@@ -92,5 +92,17 @@ h2 {
 h3 {
     font-family: "Inter", sans-serif;
     font-size: 40px;
+    color: $hvid;
+}
+
+h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: $hvid;
+}
+
+h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
     color: $hvid;
 }

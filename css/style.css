@@ -59,9 +59,9 @@ body {
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; /*find anden font*/
   font-weight: 300;
-  font: 24px;
+  font-size: 18px;
   color: white;
 }
 
@@ -83,6 +83,18 @@ h2 {
 h3 {
   font-family: "Inter", sans-serif;
   font-size: 40px;
+  color: white;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
   color: white;
 }
 
@@ -145,12 +157,18 @@ main {
 }
 main #home_section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 105vh;
 }
-main #home_section .content {
+main #home_section hr {
+  width: 100%;
+  margin-top: 12%;
+  color: rgba(255, 255, 255, 0.2);
+}
+main #home_section .home_content {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -158,19 +176,19 @@ main #home_section .content {
   height: 60vh;
   margin-top: 10vh;
 }
-main #home_section .content .knap {
+main #home_section .home_content .knap {
   margin-top: 2vw;
 }
-main #home_section .content p {
+main #home_section .home_content p {
   width: 60%;
 }
-main #home_section .content .andersen_afstand {
+main #home_section .home_content .andersen_afstand {
   margin-left: 5.2vw;
 }
-main #home_section .content .bugstavs_farve {
+main #home_section .home_content .bugstavs_farve {
   -webkit-text-stroke: 5px #CAA052;
 }
-main #home_section .trekant {
+main #home_section .billede_overlay {
   position: absolute;
   z-index: -1;
   background-color: #171717;
@@ -193,24 +211,35 @@ main #omMig_section {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
+  background-color: #171717;
 }
-main #omMig_section .omMig {
+main #omMig_section .omMig_content {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 60vh;
+  flex-direction: column;
+  width: 60%;
 }
-main #omMig_section .tekst_section {
+main #omMig_section .omMig_content .omMig {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
-  width: 50%;
+  align-items: center;
+  width: 100%;
   height: 50vh;
 }
-main #omMig_section .tekst_section .knap {
+main #omMig_section .omMig_content .omMig .omMig_tekst {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%;
   width: 50%;
+}
+main #omMig_section .omMig_content .omMig .omMig_tekst .knap {
+  width: 50%;
+}
+main #omMig_section .omMig_content .omMig .billedet_section img {
+  width: 80%;
 }
 main #omMig_section .billedet_section {
   display: flex;
@@ -231,9 +260,147 @@ main #omMig_section .tidslinje {
   align-items: center;
   flex-direction: column;
   height: 60vh;
+  width: 100%;
 }
 main #omMig_section .tidslinje div {
   width: 100vh;
   height: 40vh;
   background-color: #CAA052;
+}
+main #programmer_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+}
+main #programmer_section .programmer_billede {
+  position: absolute;
+  z-index: -1;
+  background-attachment: fixed;
+  width: 100%;
+}
+main #programmer_section .programmer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+main #programmer_section .programmer_content .programmer_ikoner {
+  display: flex;
+  justify-content: space-between;
+}
+main #programmer_section .programmer_content .programmer_ikoner img {
+  width: 80px;
+}
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.5vh;
+  width: 19%;
+}
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box .ikon_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+main #programmer_section .programmer_content .programmer_ikoner .programmer_ikon_box p {
+  text-align: center;
+}
+main #projekter_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #171717;
+}
+main #projekter_section .projekter_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 60vh;
+}
+main #projekter_section .projekter_content .web_ikoner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main #projekter_section .projekter_content .web_ikoner img {
+  width: 100%;
+}
+main #projekter_section .projekter_content hr {
+  width: 100%;
+}
+main #kontakt_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 60vh;
+}
+main #kontakt_section .kontakt_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+}
+main #kontakt_section .kontakt_content .info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+main #kontakt_section .kontakt_content .info .min_info {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+main #kontakt_section .kontakt_content .info .min_info .ikon_tekst {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  gap: 5%;
+}
+main #kontakt_section .kontakt_content .info .min_info .ikon_tekst div p {
+  color: #CAA052;
+}
+main #kontakt_section .kontakt_content .info .find_mig {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: 14%;
+}
+main #kontakt_section .kontakt_content .info .find_mig .media_ikoner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+main #kontakt_section .map {
+  width: 50%;
+  height: 75%;
+  background-color: rgb(61, 102, 89);
+}
+main #kontakt_section hr {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -13,13 +13,20 @@ main {
 
     #home_section {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        height: 105vh;
+
+        hr {
+            width: 100%;
+            margin-top: 12%;
+            color: rgb(255, 255, 255, 0.2);
+        }
 
 
-        .content {
+        .home_content {
             display: flex;
             justify-content: space-between;
             // align-items: center;
@@ -51,7 +58,7 @@ main {
             }
         }
 
-        .trekant {
+        .billede_overlay {
             position: absolute;
             z-index: -1;
             background-color: $sort;
@@ -85,30 +92,57 @@ main {
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        width: 60%;
+        width: 100%;
 
-        .omMig {
+        background-color: $sort;
+
+        .omMig_content {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-
-            height: 60vh;
-        }
-
-        .tekst_section {
-            display: flex;
-            justify-content: space-around;
-            // align-items: center;
             flex-direction: column;
+            width: 60%;
 
-            width: 50%;
-            height: 50vh;
+            // background-color: rgb(53, 102, 84);
 
-            .knap {
-                width: 50%;
+            .omMig {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                // flex-direction: column;
+
+                width: 100%;
+                height: 50vh;
+
+                // background-color: rgb(54, 66, 121);
+
+                .omMig_tekst {
+
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    height: 80%;
+                    width: 50%;
+
+                    // background-color: rgb(26, 87, 87);
+
+                    .knap {
+                        width: 50%;
+                    }
+                }
+
+                .billedet_section {
+                    img {
+                        width: 80%;
+                    }
+                }
+
             }
+
+
         }
+
 
         .billedet_section {
             display: flex;
@@ -134,12 +168,217 @@ main {
             flex-direction: column;
 
             height: 60vh;
+            width: 100%;
 
             div {
                 width: 100vh;
                 height: 40vh;
                 background-color: $gul;
             }
+        }
+    }
+
+    #programmer_section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        height: 60vh;
+        // background-color: rgb(48, 30, 40);
+
+        .programmer_billede {
+            position: absolute;
+            z-index: -1;
+            background-attachment: fixed;
+
+            width: 100%;
+        }
+
+        .programmer_content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            width: 60%;
+            height: 100%;
+
+            // background-color: rgb(110, 77, 156);
+
+            .programmer_ikoner {
+                display: flex;
+                justify-content: space-between;
+
+                // background-color: rgb(100, 61, 83);
+
+
+                img {
+                    width: 80px;
+
+                }
+
+                .programmer_ikon_box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+
+                    gap: 2.5vh;
+                    width: 19%;
+
+                    // background-color: rgb(143, 114, 130);
+
+                    .ikon_box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 1vh;
+
+                        // background-color: rgb(246, 194, 223);
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    #projekter_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+
+        background-color: $sort;
+
+        .projekter_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 60%;
+            height: 60vh;
+
+            .web_ikoner {
+                display: flex;
+                justify-content: space-between;
+
+                width: 100%;
+
+                // gap: 10%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            hr {
+                width: 100%;
+            }
+        }
+    }
+
+    #kontakt_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+        height: 60vh;
+
+        // background-color: rgb(40, 38, 56);
+
+        .kontakt_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // flex-direction: column;
+
+            width: 60%;
+            height: 100%;
+
+            // background-color: rgb(78, 74, 112);
+
+            .info {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+                flex-direction: column;
+
+                width: 50%;
+                height: 100%;
+
+                // background-color: rgb(114, 108, 168);
+
+
+                .min_info {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: start;
+                    flex-direction: column;
+
+                    width: 100%;
+                    height: 100%;
+
+                    // background-color: rgb(154, 149, 202);
+
+
+                    .ikon_tekst {
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+
+                        width: 100%;
+                        gap: 5%;
+
+                        div {
+                            p {
+                                color: $gul;
+                            }
+                        }
+                    }
+                }
+
+                .find_mig {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: start;
+                    flex-direction: column;
+
+                    width: 100%;
+                    height: 14%;
+
+                    // background-color: rgb(58, 117, 90);
+
+                    .media_ikoner {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        width: 25%;
+
+                        // background-color: rgb(35, 86, 123);
+                    }
+                }
+            }
+        }
+
+        .map {
+            width: 50%;
+            height: 75%;
+            background-color: rgb(61, 102, 89);
+        }
+
+        hr {
+            width: 100%;
         }
     }
 
