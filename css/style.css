@@ -14,21 +14,21 @@ body {
   background-color: #171717;
 }
 
-.logo {
+.logo_box {
   width: 2.8vw;
   fill: white;
 }
 
-.logo:hover {
+.logo_box:hover .logo {
   fill: #CAA052;
 }
 
-.ikon {
+.ikon_box {
   width: 1.8vw;
   fill: white;
 }
 
-.ikon:hover {
+.ikon_box:hover .ikon {
   fill: #CAA052;
 }
 

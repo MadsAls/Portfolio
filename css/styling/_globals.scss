@@ -12,23 +12,27 @@ body {
     background-color: $sort;
 }
 
-.logo {
+.logo_box {
     // width: 50px;
     // width: 25%;
     // width: 5vh;
     width: 2.8vw;
     fill: $hvid;
 }
-.logo:hover {
-    fill: #CAA052;
+.logo_box:hover {
+    .logo{
+        fill: #CAA052;
+    }
 }
 
-.ikon {
+.ikon_box {
     width: 1.8vw;
     fill: $hvid;
 }
-.ikon:hover {
-    fill: #CAA052;
+.ikon_box:hover {
+    .ikon{
+        fill: #CAA052;
+    }
 }
 
 
