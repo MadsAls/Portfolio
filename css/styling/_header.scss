@@ -77,7 +77,27 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    header{
-        display: none;
+    header {
+        justify-content: center;
+        align-items: center;
+
+        height: 75px;
+        width: 75px;
+        nav {
+            justify-content: center;
+
+            .logo_box {
+                width: 30px;
+                height: 30px;
+            }
+
+            ul {
+                display: none;
+            }
+
+            .media_ikoner {
+                display: none;
+            }
+        }
     }
 }

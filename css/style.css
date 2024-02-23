@@ -28,7 +28,7 @@ body {
 }
 
 .ikon_box {
-  width: 1.8vw;
+  width: 35px;
   fill: white;
 }
 
@@ -169,6 +169,22 @@ header nav .media_ikoner {
 
 @media screen and (max-width: 768px) {
   header {
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav .logo_box {
+    width: 30px;
+    height: 30px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .media_ikoner {
     display: none;
   }
 }
@@ -190,6 +206,7 @@ footer .footer_section .footer_content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
 }
@@ -199,6 +216,7 @@ footer .footer_section .footer_content .min_info {
   align-items: start;
   flex-direction: column;
   width: 15%;
+  min-width: 300px;
   height: 70%;
 }
 footer .footer_section .footer_content .min_info .ikon_tekst {
@@ -217,6 +235,7 @@ footer .footer_section .footer_content .footer_media {
   align-items: start;
   flex-direction: column;
   width: 12%;
+  min-width: 300px;
   height: 35%;
 }
 footer .footer_section .footer_content .footer_media .media_ikoner {
@@ -225,6 +244,25 @@ footer .footer_section .footer_content .footer_media .media_ikoner {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    height: 25vh;
+    width: 100%;
+  }
+  footer .logo_box {
+    display: none;
+  }
+  footer .footer_section {
+    width: 80%;
+  }
+  footer .footer_section .footer_content .footer_media {
+    height: 45%;
+  }
+  footer .footer_section .footer_content .footer_media .media_ikoner {
+    justify-content: start;
+    gap: 20px;
+  }
+}
 main {
   position: relative;
   display: flex;
@@ -356,12 +394,72 @@ main .content .omMig_section .tidslinje {
 }
 main .content .omMig_section .tidslinje .swiper {
   width: 100%;
-  height: 800px;
+  height: 480px; /*TODO!  Juster højten*/
 }
 main .content .omMig_section .tidslinje .swiper-slide { /*&-slide = .swiper-slide*/
   width: 400px;
   height: 100%;
-  background-color: aqua;
+}
+main .content .omMig_section .tidslinje .swiper-my-button-prev, main .content .omMig_section .tidslinje .swiper-my-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #CAA052;
+  z-index: 10;
+  cursor: pointer;
+}
+main .content .omMig_section .tidslinje .swiper-my-button-prev {
+  left: 0;
+}
+main .content .omMig_section .tidslinje .swiper-my-button-next {
+  right: 0;
+}
+main .content .omMig_section .tidslinje .swiper-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .content .omMig_section .tidslinje .swiper-content__overskrift {
+  margin-bottom: 10px;
+}
+main .content .omMig_section .tidslinje .swiper-content__work {
+  margin-bottom: 40px;
+}
+main .content .omMig_section .tidslinje .swiper-content__streg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+main .content .omMig_section .tidslinje .swiper-content__ikon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+}
+main .content .omMig_section .tidslinje .swiper-content__ikon img {
+  width: 100%;
+}
+main .content .omMig_section .tidslinje .swiper-content__tekst {
+  display: flex;
+  width: 80%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+main .content .omMig_section .tidslinje .swiper-content__tekst p {
+  color: #171717;
 }
 main .content .programmer_section {
   position: relative;
@@ -514,11 +612,45 @@ main .content .kontakt_section .map {
   main .content .omMig_section .omMig_content .omMig {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    gap: 10vw;
   }
   main .content .omMig_section .omMig_content .omMig .omMig_tekst {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     width: 100%;
+  }
+  main .content .omMig_section .omMig_content .omMig .omMig_tekst p {
+    text-align: center;
+  }
+  main .content .programmer_section {
+    height: 100vh;
+  }
+  main .content .programmer_section .programmer_content .programmer_ikoner {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .content .programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks {
+    width: 80%;
+  }
+  main .content .projekter_section .projekter_content {
+    height: 35vh;
+  }
+  main .content .kontakt_section .kontakt_content {
+    justify-content: start;
+    width: 80%;
+  }
+  main .content .kontakt_section .kontakt_content .info {
+    width: 100%;
+  }
+  main .content .kontakt_section .kontakt_content .info .find_mig {
+    height: 30%;
+  }
+  main .content .kontakt_section .kontakt_content .info .find_mig .media_ikoner {
+    width: 50%;
+  }
+  main .content .kontakt_section .kontakt_content .map {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -190,13 +190,82 @@ main {
 
                 .swiper{
                     width: 100%;
-                    height: 800px;
+                    height: 480px; /*TODO!  Juster højten*/
 
                     &-slide{ /*&-slide = .swiper-slide*/
                         width: 400px;
                         height: 100%;
+                    }
 
-                        background-color: aqua;
+                    &-my-button {
+                        &-prev, &-next {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 50px;
+                            height: 50px;
+                            background-color: $gul;
+                            z-index: 10;
+                            cursor: pointer;
+                        }
+                        &-prev {
+                            left: 0;
+                        }
+                        &-next {
+                            right: 0;
+                        }
+                    }
+                    &-content {
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        &__overskrift{
+                            margin-bottom: 10px;
+                        }
+
+                        &__work{
+                            margin-bottom: 40px;
+                        }
+
+                        &__streg {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 4px;
+                            background-color: $hvid;
+
+                            margin-bottom: 40px;
+
+                        }
+                        &__ikon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 50px;
+                            height: 50px;
+                            background-color: $hvid;
+                            border-radius: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        &__tekst {
+                            display: flex;
+                            width: 80%;
+                            padding: 30px;
+                            background-color: $hvid;
+                            border-radius: 10px;
+
+                            p {
+                                color: $sort;
+                            }
+                        }
                     }
                 }
             }

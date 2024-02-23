@@ -11,7 +11,7 @@
             .home_content {
                 width: 80%;
 
-                
+
                 p {
                     width: 100%;
                 }
@@ -22,37 +22,80 @@
             .omMig_section {
 
                 .omMig_content {
-
                     .omMig {
                         display: flex;
                         flex-direction: column;
 
-                        height: 60vh;
+                        gap: 10vw;
 
-                        // gap: 10vw;
-
-                        .omMig_tekst{
+                        .omMig_tekst {
                             display: flex;
-                            justify-content: space-between;
+                            // justify-content: space-between;
+                            align-items: center;
 
                             width: 100%;
+
+                            p {
+                                text-align: center;
+                            }
                         }
 
                     }
+
+                }
+
+            }
+
+            .programmer_section {
+                height: 100vh;
+                .programmer_content {
+                    .programmer_ikoner{
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        gap: 20px;
+
+                        .programmer_ikon_boks{
+                            width: 80%;
+                        }
+                    }
                 }
             }
-        }
 
-        .programmer_section {
+            .projekter_section {
 
-            .programmer_content {
+                .projekter_content {
+                    height: 35vh;
+                }
             }
-        }
 
-        .projekter_section {
+            .kontakt_section {
 
-            .projekter_content {
+                .kontakt_content {
+                    justify-content: start;
+                    width: 80%;
+
+                    .info {
+                        width: 100%;
+
+                        .find_mig {
+                            height: 30%;
+                            .media_ikoner {
+
+                                width: 50%;
+                            }
+                        }
+
+                    }
+
+                    .map {
+                        display: none;
+                    }
+                }
             }
+
         }
+
     }
 }
