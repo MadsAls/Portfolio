@@ -23,8 +23,9 @@ body {
     width: 2.8vw;
     fill: $hvid;
 }
+
 .logo_box:hover {
-    .logo{
+    .logo {
         fill: #CAA052;
     }
 }
@@ -33,33 +34,21 @@ body {
     width: 1.8vw;
     fill: $hvid;
 }
+
 .ikon_box:hover {
-    .ikon{
+    .ikon {
         fill: #CAA052;
     }
 }
 
 .pil {
-    padding-top: 10vh; /*Slet*/
-    margin: auto;
-    // margin-top: 10vh; /*Set den til*/
+    padding-top: 10vh;
+    /*Slet*/
+    // margin: auto;
 }
 
 .knap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: "Inter", sans-serif;
-    text-decoration: none;
-    color: $hvid;
-    font-size: 24px;
-    padding: 7px 10px 7px 10px;
-    background-color: $gul;
-    border-radius: 10px;
-    border: 2px solid $gul;
-    
-    width: 16%;
+    @include knap;
 }
 
 .knap:hover {
@@ -69,47 +58,69 @@ body {
 }
 
 p {
-    font-family: "Inter", sans-serif; /*find anden font*/ 
+    font-family: "Inter", sans-serif;
+    /*find anden font*/
     font-weight: 400;
     font-size: 18px;
     color: $hvid;
 }
 
 h1 {
-    font-size: 96px;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    color: rgb(0, 0, 0, 0);
-    -webkit-text-stroke: 5px rgb(255, 255, 255);
-    letter-spacing: 8px;
-
-    // h1::first-letter { //Virker ikke 
-    //     /*Virker ikke med -webkit-text-stroke: 5px #CAA052;*/
-    //     -webkit-text-stroke: 5px #CAA052;
-    //     color: rgb(0, 0, 0, 0);
-    // }
-}
-
-h2 {
     font-family: "Inter", sans-serif;
     font-size: 32px;
     color: $hvid;
 }
 
-h3 {
+h2 {
     font-family: "Inter", sans-serif;
     font-size: 40px;
     color: $hvid;
 }
 
-h4 {
+h3 {
     font-family: "Inter", sans-serif;
     font-size: 18px;
+
     color: $hvid;
 }
 
-h5 {
+h4 {
     font-family: "Inter", sans-serif;
     font-size: 20px;
     color: $hvid;
+}
+
+hr {
+    width: 60%;
+}
+
+.container {
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    p {
+        /*find anden font*/
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        // font-size: 40px;
+    }
+    
+    h3 {
+        // font-size: 18px;
+    }
+    
+    h4 {
+        // font-size: 20px;
+    }
 }

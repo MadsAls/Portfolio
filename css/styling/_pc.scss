@@ -10,35 +10,37 @@ main {
     width: 100%;
 
 
-    #home_section { 
+
+    .home_section {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         width: 100%;
-        height: 105vh;
+        height: 100vh;
 
-        border-bottom: solid 2px $hvid;
-
-        // background-color: rgb(36, 63, 54);
-
-
+        background: no-repeat center fixed;
+        background-image: url("../img/baugrunds_billeder/Forside_billede.png");
+        background-size: cover;
 
 
         .home_content {
             display: flex;
             justify-content: space-evenly;
-            // align-items: center;
+            align-items: start;
             flex-direction: column;
+            align-items: flex-start;
 
-            width: 60%;
+
+            // width: 60%;
             height: 60vh;
 
             margin-top: 12vh;
 
             // background-color: rgb(43, 74, 74);
 
-            h1{ 
+            h1 {
                 width: 80%;
             }
 
@@ -48,13 +50,13 @@ main {
             }
 
             p {
-                width: 60%;
+                width: 50%;
             }
-            
+
             .andersen_afstand {
                 margin-left: 5.2vw;
             }
-            
+
             .knap {
                 margin-top: 2vw;
             }
@@ -80,6 +82,7 @@ main {
             position: absolute;
             z-index: -2;
 
+            width: 100%;
 
             top: 0;
             right: 0;
@@ -89,293 +92,318 @@ main {
         }
     }
 
-    #omMig_section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-
-        background-color: $sort;
-
-        .omMig_content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 60%;
-
-            // background-color: rgb(53, 102, 84);
-
-            .omMig {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                // flex-direction: column;
-
-                width: 100%;
-                height: 50vh;
-
-                border-bottom: solid 2px $hvid;
-
-                // background-color: rgb(54, 66, 121);
-
-                .omMig_tekst {
-
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: column;
-
-                    height: 80%;
-                    width: 50%;
-
-                    // background-color: rgb(26, 87, 87);
-
-                    .knap {
-                        width: 50%;
-                    }
-                }
-
-                .billedet_section {
-                    img {
-                        width: 80%;
-                    }
-                }
-
-            }
-
-
-        }
-
-
-        .billedet_section {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
-
-            width: 40%;
-
-            img {
-                width: 100%;
-            }
-        }
-
-        .tidslinje {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            flex-direction: column;
-
-            height: 60vh;
-            width: 100%;
-
-            div {
-                width: 100vh;
-                height: 40vh;
-                background-color: $gul;
-            }
-        }
-    }
-
-    #programmer_section {
+    .content {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-
-        height: 60vh;
-        // background-color: rgb(48, 30, 40);
-
-        .programmer_billede {
-            position: absolute;
-            z-index: -1;
-            background-attachment: fixed;
-
-            width: 100%;
-        }
-
-        .programmer_content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 60%;
-            height: 100%;
-
-            gap: 10%;
-
-            // background-color: rgb(110, 77, 156);
-
-            .programmer_ikoner {
-                display: flex;
-                justify-content: space-between;
-
-                // background-color: rgb(100, 61, 83);
-
-
-                img {
-                    width: 80px;
-
-                }
-
-                .programmer_ikon_boks {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-
-                    gap: 2.5vh;
-                    width: 19%;
-
-                    // background-color: rgb(143, 114, 130);
-
-                    .ikon_boks {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        gap: 1vh;
-
-                        // background-color: rgb(246, 194, 223);
-                    }
-
-                    p {
-                        text-align: center;
-                    }
-                }
-            }
-        }
-    }
-
-    #projekter_section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-
-        background-color: $sort;
-
-        
-        .projekter_content {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            
-            width: 60%;
-            height: 60vh;
-            
-            border-bottom: solid 2px $hvid;
-
-            .web_ikoner {
-                display: flex;
-                justify-content: space-between;
-
-                width: 100%;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    #kontakt_section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-
+        flex-wrap: wrap;
         width: 100%;
-        height: 80vh;
 
+        border-top: solid 2px $hvid;
         border-bottom: solid 2px $hvid;
 
-        // background-color: rgb(40, 38, 56);
+        .omMig_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
 
-        .kontakt_content {
+            background-color: $sort;
+
+            .omMig_content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // width: 60%;
+
+                // background-color: rgb(53, 102, 84);
+
+                .omMig {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    // flex-direction: column;
+
+                    width: 100%;
+                    height: 50vh;
+
+                    margin: 5vh 0;
+
+                    // background-color: rgb(54, 66, 121);
+
+                    .omMig_tekst {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+
+                        height: 80%;
+                        width: 50%;
+
+                        // background-color: rgb(26, 87, 87);
+                    }
+
+                    .billedet_section {
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                }
+
+
+            }
+
+            hr {
+                width: 100%;
+            }
+
+            .billedet_section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .tidslinje {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+
+                height: 60vh;
+                width: 100%;
+
+                margin: 5vh 0;
+
+                .swiper{
+                    width: 100%;
+                    height: 800px;
+
+                    &-slide{ /*&-slide = .swiper-slide*/
+                        width: 400px;
+                        height: 100%;
+
+                        background-color: aqua;
+                    }
+                }
+            }
+        }
+
+        .programmer_section {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            // flex-direction: column;
+            width: 100%;
 
-            width: 60%;
-            height: 80%;
+            height: 60vh;
 
-            // background-color: rgb(78, 74, 112);
+            background: no-repeat center fixed;
+            background-image: url("../img/baugrunds_billeder/Forside_programmer_billede.png");
+            background-size: cover;
 
-            .info {
+
+            .programmer_billede {
+                position: absolute;
+                z-index: -1;
+                background-attachment: fixed;
+
+                width: 100%;
+            }
+
+            .programmer_content {
                 display: flex;
                 justify-content: center;
-                align-items: start;
+                align-items: center;
                 flex-direction: column;
-
-                width: 50%;
+                // width: 60%;
                 height: 100%;
 
-                // background-color: rgb(114, 108, 168);
+                gap: 10%;
 
+                // background-color: rgb(110, 77, 156);
 
-                .min_info {
+                .programmer_ikoner {
                     display: flex;
-                    justify-content: space-around;
-                    align-items: start;
-                    flex-direction: column;
+                    justify-content: space-between;
 
-                    width: 100%;
-                    height: 100%;
-
-                    // background-color: rgb(154, 149, 202);
+                    // background-color: rgb(100, 61, 83);
 
 
-                    .ikon_tekst {
+                    img {
+                        width: 80px;
+
+                    }
+
+                    .programmer_ikon_boks {
                         display: flex;
-                        justify-content: start;
                         align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        flex-wrap: wrap;
 
-                        width: 100%;
-                        gap: 5%;
+                        gap: 2.5vh;
+                        width: 19%;
 
-                        div {
-                            p {
-                                color: $gul;
-                            }
+                        // background-color: rgb(143, 114, 130);
+
+                        .ikon_boks {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            gap: 1vh;
+
+                            // background-color: rgb(246, 194, 223);
+                        }
+
+                        p {
+                            text-align: center;
                         }
                     }
                 }
+            }
+        }
 
-                .find_mig {
+        .projekter_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: $sort;
+
+
+            .projekter_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                height: 60vh;
+
+                margin: 5vh 0;
+
+                .web_ikoner {
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .kontakt_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            width: 100%;
+            height: 80vh;
+
+            // background-color: rgb(40, 38, 56);
+
+            .kontakt_content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // flex-direction: column;
+
+                width: 60%;
+                height: 80%;
+
+                // background-color: rgb(78, 74, 112);
+
+                .info {
                     display: flex;
                     justify-content: space-between;
                     align-items: start;
                     flex-direction: column;
 
-                    width: 100%;
-                    height: 14%;
+                    width: 50%;
+                    height: 100%;
 
-                    // background-color: rgb(58, 117, 90);
+                    // background-color: rgb(114, 108, 168);
 
-                    .media_ikoner {
+
+                    .min_info {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: start;
+                        flex-direction: column;
+
+                        width: 100%;
+                        height: 100%;
+
+                        // background-color: rgb(154, 149, 202);
+
+
+                        .ikon_tekst {
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+
+                            width: 100%;
+                            gap: 5%;
+
+                            img {
+                                width: 5vh;
+                            }
+
+                            div {
+                                p {
+                                    color: $gul;
+                                }
+                            }
+                        }
+                    }
+
+                    .find_mig {
                         display: flex;
                         justify-content: space-between;
-                        align-items: center;
+                        align-items: start;
+                        flex-direction: column;
 
-                        width: 25%;
+                        width: 100%;
+                        height: 14%;
 
-                        // background-color: rgb(35, 86, 123);
+                        // background-color: rgb(58, 117, 90);
+
+                        .media_ikoner {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            width: 25%;
+
+                            // background-color: rgb(35, 86, 123);
+                        }
                     }
                 }
             }
-        }
 
-        .map {
-            width: 50%;
-            height: 75%;
-            background-color: rgb(61, 102, 89);
+            .map {
+                width: 50%;
+                height: 75%;
+                background-color: rgb(61, 102, 89);
+            }
         }
     }
 }

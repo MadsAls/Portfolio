@@ -1,0 +1,15 @@
+@mixin knap {
+    /* DIN KODE HER */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: $hvid;
+    font-size: clamp(12px, 100vw, 18px);
+    padding: 10px 25px 10px 25px;
+    background-color: $gul;
+    border-radius: 10px;
+    border: 2px solid $gul;
+   }

@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mads Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="javascript" src="js/main.js/js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Mads Portfolio</title>
 </head>
 
 <body>
@@ -62,13 +66,13 @@
         </nav>
     </header>
     <main>
-        <section id="home_section">
-            <div class="home_content">
+        <section id="home_section" class="home_section">
+            <div class="home_content container">
                 <img class="maa" src="img/MAA.png" alt="MAA">
                 <!-- <h1><span class="bugstavs_farve">M</span>ADS <span class="bugstavs_farve">A</span>LS <span
                         class="andersen_afstand"><span class="bugstavs_farve">A</span>NDERSEN...</span></h1> -->
 
-                <h2>Multimediedesigner</h2>
+                <h1>Multimediedesigner</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit accumsan nibh magna, orci integer varius
                     auctor mi
@@ -76,139 +80,163 @@
 
                 <a class="knap" href="index.html#kontakt_section">Kontakt</a>
 
-                <a class="pil" href="index.html#omMig_section"><img src="img/ikoner/pil.svg" alt="pil"></a>
             </div>
+            <a class="pil" href="index.html#omMig_section"><img src="img/ikoner/pil.svg" alt="pil"></a>
 
             <!-- <div class="billede_overlay"></div> Skal laves!!!! -->
-
-            <img class="baugrunds_billede" src="img/baugrunds_billeder/Forside_billede.png" alt="">
         </section>
 
-        <section id="omMig_section">
-            <section class="omMig_content">
-                <div class="omMig">
-                    <div class="omMig_tekst">
-                        <h3>Om Mig</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus pharetra, vivamus ullamcorper
-                            interdum
-                            elementum sem vitae eros nam felis bibendum, dictum parturient tortor netus etiam nisi
-                            facilisis
-                            a.
-                            Sollicitudin curabitur gravida montes libero senectus class faucibus suspendisse sodales et
-                            himenaeoscelerisque justo feugiat.</p>
+        <section class="content">
 
-                        <a class="knap" href="">Download CV Her</a> <!--LINK MIG TIL AT DOWNLOADE CV!!!!!-->
+            <section id="omMig_section" class="omMig_section">
+                <section class="container omMig_content">
+                    <div class="omMig">
+                        <div class="billedet_section">
+                            <img src="img/omMig.png" alt="">
+                        </div>
+                        <div class="omMig_tekst">
+                            <h2>Om Mig</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit mus pharetra, vivamus ullamcorper
+                                interdum
+                                elementum sem vitae eros nam felis bibendum, dictum parturient tortor netus etiam nisi
+                                facilisis
+                                a.
+                                Sollicitudin curabitur gravida montes libero senectus class faucibus suspendisse sodales
+                                et
+                                himenaeoscelerisque justo feugiat.</p>
+
+                            <a class="knap" href="">Download CV Her</a> <!--LINK MIG TIL AT DOWNLOADE CV!!!!!-->
+                        </div>
+
                     </div>
 
-                    <div class="billedet_section">
-                        <img src="img/omMig_billede.png" alt="">
+
+                    <hr>
+
+                    <section class="tidslinje">
+                        <h2>Tidslinje</h2>
+
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                ...
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+
+                    </section>
+                </section>
+
+
+            </section>
+
+            <section id="programmer_section" class="programmer_section">
+                <section class="programmer_content container">
+                    <h2>Programmer</h2>
+
+                    <div class="programmer_ikoner">
+                        <div class="programmer_ikon_boks">
+                            <div class="ikon_boks">
+                                <img src="img/ikoner/Adobe_ikon.png" alt="Adobe">
+                                <h3>Adobe Creative</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
+                                tellus nostra proin vivamus, dictum imperdiet hac.</p>
+                        </div>
+                        <div class="programmer_ikon_boks">
+                            <div class="ikon_boks">
+                                <img src="img/ikoner/VSC_ikon.png" alt="VSC">
+                                <h3>HTML, CSS & JS</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
+                                tellus nostra proin vivamus, dictum imperdiet hac.</p>
+                        </div>
+                        <div class="programmer_ikon_boks">
+                            <div class="ikon_boks">
+                                <img src="img/ikoner/Figma_ikon.png" alt="Figma">
+                                <h3>Figma</h3>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
+                                tellus nostra proin vivamus, dictum imperdiet hac.</p>
+                        </div>
                     </div>
-                </div>
+                </section>
+            </section>
 
-                <section class="tidslinje">
-                    <h3>Tidslinje</h3>
+            <section id="projekter_section" class="projekter_section">
+                <section class="projekter_content container">
+                    <h2>Web Projekter</h2>
 
-                    <div></div>
+                    <div class="web_ikoner">
+                        <img src="img/ikoner/Website_ikoner.png" alt="Alle ikoner">
+                        <!-- <img src="img/ikoner/aagn_ikon.png" alt="Aagn">
+                    <img src="img/ikoner/nippon_ikon.png" alt="Nippon">
+                    <img src="img/ikoner/bio_ikon.png" alt="Bio">
+                    <img src="img/ikoner/moesgaard_ikon.png" alt="moesgaard"> -->
+                    </div>
+
+                    <a class="knap" href="">Se Projekter</a> <!--LINK MIG TIL PROJEKTER UNDERSIDEN !!!!!-->
 
                 </section>
             </section>
 
+            <hr>
 
-        </section>
+            <section id="kontakt_section" class="kontakt_section">
+                <section class="kontakt_content container">
+                    <section class="info">
 
-        <section id="programmer_section">
-            <section class="programmer_content">
-                <h3>Programmer</h3>
+                        <h2>Info Om Mig</h2>
 
-                <div class="programmer_ikoner">
-                    <div class="programmer_ikon_boks">
-                        <div class="ikon_boks">
-                            <img src="img/ikoner/Adobe_ikon.png" alt="Adobe">
-                            <h4>Adobe Creative</h4>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
-                            tellus nostra proin vivamus, dictum imperdiet hac.</p>
-                    </div>
-                    <div class="programmer_ikon_boks">
-                        <div class="ikon_boks">
-                            <img src="img/ikoner/VSC_ikon.png" alt="VSC">
-                            <h4>HTML, CSS & JS</h4>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
-                            tellus nostra proin vivamus, dictum imperdiet hac.</p>
-                    </div>
-                    <div class="programmer_ikon_boks">
-                        <div class="ikon_boks">
-                            <img src="img/ikoner/Figma_ikon.png" alt="Figma">
-                            <h4>Figma</h4>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit torquent, senectus fusce interdum
-                            tellus nostra proin vivamus, dictum imperdiet hac.</p>
-                    </div>
-                </div>
-
-
-            </section>
-            <img class="programmer_billede" src="img/baugrunds_billeder/Forside_programmer_billede.png" alt="">
-        </section>
-
-        <section id="projekter_section">
-            <section class="projekter_content">
-                <h3>Web Projekter</h3>
-
-                <div class="web_ikoner">
-                    <img src="img/ikoner/Website_ikoner.png" alt="Alle ikoner">
-                    <!-- <img src="img/ikoner/aagn_ikon.png" alt="Aagn">
-                    <img src="img/ikoner/nippon_ikon.png" alt="Nippon">
-                    <img src="img/ikoner/bio_ikon.png" alt="Bio">
-                    <img src="img/ikoner/moesgaard_ikon.png" alt="moesgaard"> -->
-                </div>
-
-                <a class="knap" href="">Se Projekter</a> <!--LINK MIG TIL PROJEKTER UNDERSIDEN !!!!!-->
-
-            </section>
-        </section>
-
-        <section id="kontakt_section">
-            <section class="kontakt_content">
-                <section class="info">
-
-                    <h3>Info Om Mig</h3>
-
-                    <div class="min_info">
-                        <div class="ikon_tekst">
-                            <img src="img/ikoner/user.png" alt="user">
-                            <div>
-                                <h5>Navn</h5>
-                                <p>Mads Als Andersen</p>
+                        <div class="min_info">
+                            <div class="ikon_tekst">
+                                <img src="img/ikoner/user.png" alt="user">
+                                <div>
+                                    <h4>Navn</h4>
+                                    <p>Mads Als Andersen</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="ikon_tekst">
-                            <img src="img/ikoner/email.png" alt="email">
-                            <div>
-                                <h5>Email</h5>
-                                <p>mads.als.andersen@gmail.com</p>
+                            <div class="ikon_tekst">
+                                <img src="img/ikoner/email.png" alt="email">
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>mads.als.andersen@gmail.com</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="ikon_tekst">
-                            <img src="img/ikoner/tlf.png" alt="tlf">
-                            <div>
-                                <h5>Nummer</h5>
-                                <p>+45 22 11 76 88</p>
+                            <div class="ikon_tekst">
+                                <img src="img/ikoner/tlf.png" alt="tlf">
+                                <div>
+                                    <h4>Nummer</h4>
+                                    <p>+45 22 11 76 88</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="ikon_tekst">
-                            <img src="img/ikoner/location.png" alt="location">
-                            <div>
-                                <h5>Adresse</h5>
-                                <p>8000 Aarhus C.</p>
+                            <div class="ikon_tekst">
+                                <img src="img/ikoner/location.png" alt="location">
+                                <div>
+                                    <h4>Adresse</h4>
+                                    <p>8000 Aarhus C.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="find_mig">
-                            <h5>Find mig på de sociale medier:</h5>
+                            <h4>Find mig på de sociale medier:</h4>
                             <div class="media_ikoner">
                                 <a class="ikon_box" href="https://www.facebook.com/mads.alsandersen/?locale=da_DK"
                                     target="_blank"><svg id="Layer_1" data-name="Layer 1"
@@ -233,16 +261,16 @@
                             </div>
                         </div>
 
-                    </div>
+                    </section>
 
-                </section>
+                    <section class="map">
 
-                <section class="map">
-
+                    </section>
                 </section>
             </section>
         </section>
     </main>
+    </section>
 
     <footer>
 
@@ -251,40 +279,40 @@
                 <div class="min_info">
                     <div class="ikon_tekst">
                         <div>
-                            <h5>Email</h5>
+                            <h4>Email</h4>
                             <p>mads.als.andersen@gmail.com</p>
                         </div>
                     </div>
 
                     <div class="ikon_tekst">
                         <div>
-                            <h5>Nummer</h5>
+                            <h4>Nummer</h4>
                             <p>+45 22 11 76 88</p>
                         </div>
                     </div>
                 </div>
 
-                    <a class="logo_box" href="index.html#home_section"><svg viewBox="0 0 500 482"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="logo"
-                                d="M500 192.011C495.05 197.531 489.96 202.931 485.18 208.581C438.09 264.291 391.05 320.051 343.99 375.781C342.73 377.271 341.44 378.731 339.51 380.951C314.68 351.821 290.24 323.161 265.61 294.261C277.02 280.911 288.12 267.921 299.61 254.481C313.03 270.191 326.07 285.471 339.3 300.971C375.99 257.211 412.45 213.731 448.95 170.191V42.6805C352.69 155.631 256.99 267.921 160.6 381.021C131.87 346.811 103.56 313.101 75.32 279.481V199.001C103.73 232.861 132.13 266.721 160.87 300.981C179.43 279.181 197.84 257.551 216.5 235.631L51.14 42.5905V387.011H0C0.05 262.471 0.05 124.561 0 0.0105275C27.78 -0.0394725 55.22 0.0605275 83 0.0105275C83.6 0.570528 84.58 1.94053 85.11 2.56053C130.38 55.4005 175.63 108.251 220.89 161.091C230.7 172.551 240.53 184.001 250.49 195.631C251.45 194.551 252.12 193.821 252.76 193.071C286.23 153.791 319.67 114.491 353.16 75.2305C374.32 50.4205 396.26 24.7905 417.46 0.0105275C445.21 0.0505275 472.25 0.0105275 500 0.0505275V2.01053"
-                                fill="white" />
-                            <path class="logo"
-                                d="M500.01 387.061H449.81V287.101C461.63 273.201 473.9 258.761 486.16 244.331C489.82 240.021 496.26 233.151 500.01 228.931"
-                                fill="white" />
-                            <path class="logo"
-                                d="M109 482.011V408.271H132.23C139.25 425.021 146.45 442.211 154.07 460.361C161.6 442.381 168.77 425.251 175.95 408.111H199.46V414.721C199.46 435.361 199.45 456.001 199.48 476.641L199.56 482.001H180.01V445.351L164.93 482.001H143.39C138.25 469.211 128.01 444.651 128.01 444.651V482.001H109.01L109 482.011Z"
-                                fill="white" />
-                            <path class="logo"
-                                d="M220.23 482.011C228.95 458.901 239.43 431.141 248.2 408.051H268.57C275.73 426.971 282.92 445.841 290 464.741C292.14 470.441 294 476.251 296 482.011H276C274.77 477.721 273.53 473.431 272.36 469.371H244.62C243.05 473.671 241.52 477.841 240 482.011H220.23ZM250.85 452.991H265.88C263.42 446.511 261.06 440.301 258.35 433.191C255.66 440.301 253.33 446.441 250.85 452.991Z"
-                                fill="white" />
-                            <path class="logo"
-                                d="M317 482.011C326.28 457.411 335.57 432.811 344.89 408.121H365.27C370.84 422.811 376.44 437.491 381.97 452.211C385.7 462.131 389.33 472.081 393 482.021H373C371.65 477.711 370.3 473.401 369.02 469.311H341.71C339.74 473.691 337.87 477.851 336 482.021H317V482.011ZM362.59 452.991C360.16 446.481 357.84 440.261 355.12 432.961C352.4 440.211 350.06 446.431 347.6 452.991H362.6H362.59Z"
-                                fill="white" />
-                        </svg></a>
+                <a class="logo_box" href="index.html#home_section"><svg viewBox="0 0 500 482"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="logo"
+                            d="M500 192.011C495.05 197.531 489.96 202.931 485.18 208.581C438.09 264.291 391.05 320.051 343.99 375.781C342.73 377.271 341.44 378.731 339.51 380.951C314.68 351.821 290.24 323.161 265.61 294.261C277.02 280.911 288.12 267.921 299.61 254.481C313.03 270.191 326.07 285.471 339.3 300.971C375.99 257.211 412.45 213.731 448.95 170.191V42.6805C352.69 155.631 256.99 267.921 160.6 381.021C131.87 346.811 103.56 313.101 75.32 279.481V199.001C103.73 232.861 132.13 266.721 160.87 300.981C179.43 279.181 197.84 257.551 216.5 235.631L51.14 42.5905V387.011H0C0.05 262.471 0.05 124.561 0 0.0105275C27.78 -0.0394725 55.22 0.0605275 83 0.0105275C83.6 0.570528 84.58 1.94053 85.11 2.56053C130.38 55.4005 175.63 108.251 220.89 161.091C230.7 172.551 240.53 184.001 250.49 195.631C251.45 194.551 252.12 193.821 252.76 193.071C286.23 153.791 319.67 114.491 353.16 75.2305C374.32 50.4205 396.26 24.7905 417.46 0.0105275C445.21 0.0505275 472.25 0.0105275 500 0.0505275V2.01053"
+                            fill="white" />
+                        <path class="logo"
+                            d="M500.01 387.061H449.81V287.101C461.63 273.201 473.9 258.761 486.16 244.331C489.82 240.021 496.26 233.151 500.01 228.931"
+                            fill="white" />
+                        <path class="logo"
+                            d="M109 482.011V408.271H132.23C139.25 425.021 146.45 442.211 154.07 460.361C161.6 442.381 168.77 425.251 175.95 408.111H199.46V414.721C199.46 435.361 199.45 456.001 199.48 476.641L199.56 482.001H180.01V445.351L164.93 482.001H143.39C138.25 469.211 128.01 444.651 128.01 444.651V482.001H109.01L109 482.011Z"
+                            fill="white" />
+                        <path class="logo"
+                            d="M220.23 482.011C228.95 458.901 239.43 431.141 248.2 408.051H268.57C275.73 426.971 282.92 445.841 290 464.741C292.14 470.441 294 476.251 296 482.011H276C274.77 477.721 273.53 473.431 272.36 469.371H244.62C243.05 473.671 241.52 477.841 240 482.011H220.23ZM250.85 452.991H265.88C263.42 446.511 261.06 440.301 258.35 433.191C255.66 440.301 253.33 446.441 250.85 452.991Z"
+                            fill="white" />
+                        <path class="logo"
+                            d="M317 482.011C326.28 457.411 335.57 432.811 344.89 408.121H365.27C370.84 422.811 376.44 437.491 381.97 452.211C385.7 462.131 389.33 472.081 393 482.021H373C371.65 477.711 370.3 473.401 369.02 469.311H341.71C339.74 473.691 337.87 477.851 336 482.021H317V482.011ZM362.59 452.991C360.16 446.481 357.84 440.261 355.12 432.961C352.4 440.211 350.06 446.431 347.6 452.991H362.6H362.59Z"
+                            fill="white" />
+                    </svg></a>
 
                 <div class="footer_media">
-                    <h4>Find mig på:</h4>
+                    <h3>Find mig på:</h3>
                     <div class="media_ikoner">
                         <a class="ikon_box" href="https://www.facebook.com/mads.alsandersen/?locale=da_DK"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 479.79 479.81">
