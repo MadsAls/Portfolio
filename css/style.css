@@ -199,6 +199,27 @@ header nav .media_ikoner {
     display: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  header nav .logo_box {
+    width: 30px;
+    height: 30px;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .media_ikoner {
+    display: none;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -274,6 +295,11 @@ footer .footer_section .footer_content .footer_media .media_ikoner {
   footer .footer_section .footer_content .footer_media .media_ikoner {
     justify-content: start;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    display: none;
   }
 }
 main {
@@ -618,11 +644,20 @@ main .content .kontakt_section .kontakt_content .info .find_mig .media_ikoner {
   width: 25%;
 }
 main .content .kontakt_section .map {
-  width: 50%;
-  height: 75%;
-  background-color: rgb(61, 102, 89);
+  width: 40%;
+  height: 65%;
+}
+main .content .kontakt_section .map .google_map {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
 }
 
+@media screen and (max-width: 1024px) {
+  .map {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   main .container {
     width: 80%;
