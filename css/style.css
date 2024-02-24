@@ -110,11 +110,19 @@ hr {
     width: 100%;
   }
   p {
-    /*find anden font*/
     font-size: 16px;
   }
   h1 {
     font-size: 24px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 18px;
   }
 }
 header {
@@ -249,6 +257,7 @@ footer .footer_section .footer_content .footer_media .media_ikoner {
 
 @media screen and (max-width: 768px) {
   footer {
+    display: none;
     height: 25vh;
     width: 100%;
   }
@@ -663,7 +672,7 @@ main .content .kontakt_section .map {
     width: 100%;
   }
   main .content .kontakt_section .kontakt_content .info .find_mig {
-    height: 30%;
+    height: 20%;
   }
   main .content .kontakt_section .kontakt_content .info .find_mig .media_ikoner {
     width: 50%;
