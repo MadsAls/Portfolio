@@ -414,11 +414,13 @@ main .content .omMig_section .tidslinje .swiper-slide { /*&-slide = .swiper-slid
 }
 main .content .omMig_section .tidslinje .swiper-my-button-prev, main .content .omMig_section .tidslinje .swiper-my-button-next {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: #CAA052;
+  width: 25px;
+  height: 25px;
   z-index: 10;
   cursor: pointer;
 }
@@ -461,7 +463,7 @@ main .content .omMig_section .tidslinje .swiper-content__ikon {
   border-radius: 100%;
 }
 main .content .omMig_section .tidslinje .swiper-content__ikon img {
-  width: 100%;
+  width: 50%;
 }
 main .content .omMig_section .tidslinje .swiper-content__tekst {
   display: flex;
@@ -650,13 +652,16 @@ main .content .kontakt_section .map {
     width: 100%;
   }
   main .content .programmer_section {
-    height: 150vh;
+    height: 130vh;
+  }
+  main .content .programmer_section .programmer_content {
+    gap: 5%;
   }
   main .content .programmer_section .programmer_content .programmer_ikoner {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 70px;
+    gap: 50px;
   }
   main .content .programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks {
     width: 80%;

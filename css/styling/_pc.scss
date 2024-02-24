@@ -200,11 +200,14 @@ main {
                     &-my-button {
                         &-prev, &-next {
                             position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             top: 50%;
                             transform: translateY(-50%);
-                            width: 50px;
-                            height: 50px;
-                            background-color: $gul;
+                            width: 25px;
+                            height: 25px;
+                            // background-color: $gul;
                             z-index: 10;
                             cursor: pointer;
                         }
@@ -252,7 +255,7 @@ main {
                             border-radius: 100%;
 
                             img {
-                                width: 100%;
+                                width: 50%;
                             }
                         }
                         &__tekst {

@@ -66,15 +66,18 @@
             }
 
             .programmer_section {
-                height: 150vh;
+                height: 130vh;
 
                 .programmer_content {
+
+                    gap: 5%;
+
                     .programmer_ikoner {
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
 
-                        gap: 70px;
+                        gap: 50px;
 
                         .programmer_ikon_boks {
                             width: 80%;

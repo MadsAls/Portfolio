@@ -3,41 +3,36 @@ var Slides = (function () {
     function Slides() {
         const slides = [
             {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: "img/ikoner/skole_ikon.png",
+                overskrift: "Aug 2023 - ",
+                work: 'Skolen her',
+                ikon: "img/ikoner/skole.svg",
                 tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
             },
             {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: 'img/placeholder.jpg',
+                overskrift: "Aug 2022 - Jun 2023",
+                work: 'Arbejde navn',
+                ikon: 'img/ikoner/work.svg',
                 tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
             },
             {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: 'img/placeholder.jpg',
+                overskrift: "Aug 2021 - Jun 2022",
+                work: 'Arbejde navn',
+                ikon: 'img/ikoner/work.svg',
                 tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
             },
             {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: 'img/placeholder.jpg',
+                overskrift: "Aug 2018 - Jun 2021",
+                work: 'Skolen her',
+                ikon: 'img/ikoner/skole.svg',
                 tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
             },
             {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: 'img/placeholder.jpg',
+                overskrift: "Aug 2017 - Jun 2017",
+                work: 'Højskole navn',
+                ikon: 'img/ikoner/musik.svg',
                 tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
             },
-            {
-                overskrift: "En overskrift",
-                work: 'skole',
-                ikon: 'img/placeholder.jpg',
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
-            },
+
         ];
 
         const template = `
@@ -46,7 +41,7 @@ var Slides = (function () {
                     (slide) => `
                                 <div class="swiper-slide">
                                     <div class="swiper-content">
-                                        <h1 class="swiper-content__overskrift">${slide.overskrift}</h1>
+                                        <h4 class="swiper-content__overskrift">${slide.overskrift}</h4>
                                         <p class="swiper-content__work">${slide.work}</p>
                                         <div class="swiper-content__streg">
                                             <div class="swiper-content__ikon">
