@@ -938,4 +938,47 @@ main .content .kontakt_section .map .google_map {
   .webProjekter_body .webProjekter .projekter_section .projekter_content {
     height: 15vh;
   }
+  .webProjekter_body .webProjekter .projekter_section .projekter_content .web_ikoner {
+    width: 80%;
+  }
+  .webProjekter_body .accordion {
+    width: 80%;
+  }
+  .webProjekter_body .accordion .projekter_accordion_section {
+    flex-direction: column;
+    padding: 30px 10px;
+    height: 600px;
+    gap: 40px;
+  }
+  .webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_tekst {
+    width: 100%;
+  }
+  .webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_img {
+    width: 80%;
+  }
+  .webProjekter_body .accordion .billede_ned {
+    flex-direction: column-reverse;
+  }
+  .webProjekter_body .accordion .accordion_content {
+    flex-direction: column;
+    max-height: 0px;
+  }
+  .webProjekter_body .accordion .accordion_content .accordion_content_tekst_box {
+    width: 100%;
+  }
+  .webProjekter_body .accordion .accordion_content .accordion_content_box {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+  }
+  .webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_logo h4 {
+    margin-bottom: 10px;
+  }
+  .webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_ikon h4 {
+    margin-bottom: 10px;
+  }
+  .webProjekter_body .accordion input[type=radio]:checked + label + .accordion_content {
+    max-height: 700px;
+    padding: 10px 10px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
