@@ -406,9 +406,11 @@ main .content .omMig_section .tidslinje {
 }
 main .content .omMig_section .tidslinje .swiper {
   width: 100%;
-  height: 480px; /*TODO!  Juster højten*/
+  height: 480px;
+  /*TODO!  Juster højten*/
 }
-main .content .omMig_section .tidslinje .swiper-slide { /*&-slide = .swiper-slide*/
+main .content .omMig_section .tidslinje .swiper-slide {
+  /*&-slide = .swiper-slide*/
   width: 400px;
   height: 100%;
 }
@@ -474,6 +476,13 @@ main .content .omMig_section .tidslinje .swiper-content__tekst {
 }
 main .content .omMig_section .tidslinje .swiper-content__tekst p {
   color: #171717;
+}
+main .content .omMig_section .tidslinje .swiper-scrollbar-horizontal {
+  /*TODO! FIX kan ikke snakke med dem*/
+  background-color: white;
+}
+main .content .omMig_section .tidslinje .swiper-scrollbar-drag {
+  background-color: #caa052;
 }
 main .content .programmer_section {
   position: relative;

@@ -188,17 +188,21 @@ main {
 
                 margin: 5vh 0;
 
-                .swiper{
+                .swiper {
                     width: 100%;
-                    height: 480px; /*TODO!  Juster højten*/
+                    height: 480px;
+                    /*TODO!  Juster højten*/
 
-                    &-slide{ /*&-slide = .swiper-slide*/
+                    &-slide {
+                        /*&-slide = .swiper-slide*/
                         width: 400px;
                         height: 100%;
                     }
 
                     &-my-button {
-                        &-prev, &-next {
+
+                        &-prev,
+                        &-next {
                             position: absolute;
                             display: flex;
                             justify-content: center;
@@ -211,13 +215,16 @@ main {
                             z-index: 10;
                             cursor: pointer;
                         }
+
                         &-prev {
                             left: 0;
                         }
+
                         &-next {
                             right: 0;
                         }
                     }
+
                     &-content {
                         width: 100%;
                         height: 100%;
@@ -226,11 +233,11 @@ main {
                         align-items: center;
                         flex-direction: column;
 
-                        &__overskrift{
+                        &__overskrift {
                             margin-bottom: 10px;
                         }
 
-                        &__work{
+                        &__work {
                             margin-bottom: 40px;
                         }
 
@@ -245,6 +252,7 @@ main {
                             margin-bottom: 40px;
 
                         }
+
                         &__ikon {
                             display: flex;
                             justify-content: center;
@@ -258,6 +266,7 @@ main {
                                 width: 50%;
                             }
                         }
+
                         &__tekst {
                             display: flex;
                             width: 80%;
@@ -269,6 +278,16 @@ main {
                                 color: $sort;
                             }
                         }
+
+                    }
+                    &-scrollbar-horizontal {
+                        /*TODO! FIX kan ikke snakke med dem*/
+                        background-color: white;
+
+                    }
+                    &-scrollbar-drag {
+
+                        background-color: #caa052;
                     }
                 }
             }
