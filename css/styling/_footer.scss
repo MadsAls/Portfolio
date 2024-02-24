@@ -60,7 +60,7 @@ footer {
             .footer_media {
                 display: flex;
                 justify-content: space-between;
-                align-items: start;
+                align-items: end;
                 flex-direction: column;
 
                 width: 12%;
@@ -71,7 +71,8 @@ footer {
 
                 .media_ikoner {
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: end;
+                    gap: 20px;
 
                     width: 100%;
                 }

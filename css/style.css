@@ -243,7 +243,7 @@ footer .footer_section .footer_content .min_info .ikon_tekst div p {
 footer .footer_section .footer_content .footer_media {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: end;
   flex-direction: column;
   width: 12%;
   min-width: 300px;
@@ -251,7 +251,8 @@ footer .footer_section .footer_content .footer_media {
 }
 footer .footer_section .footer_content .footer_media .media_ikoner {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 20px;
   width: 100%;
 }
 
