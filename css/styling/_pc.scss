@@ -280,11 +280,13 @@ main {
                         }
 
                     }
+
                     &-scrollbar-horizontal {
                         /*TODO! FIX kan ikke snakke med dem*/
                         background-color: white;
 
                     }
+
                     &-scrollbar-drag {
 
                         background-color: #caa052;
@@ -494,14 +496,269 @@ main {
                 width: 40%;
                 height: 65%;
                 // background-color: rgb(61, 102, 89);
-                
-                .google_map{
+
+                .google_map {
                     width: 100%;
                     height: 100%;
 
-                    border-radius:  5%;
+                    border-radius: 5%;
                 }
             }
         }
+    }
+}
+
+// Web Projekter side 
+.webProjekter_body {
+
+
+    header {
+        nav {
+            ul {
+                display: none;
+            }
+        }
+    }
+
+
+
+    .webProjekter {
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        border-bottom: solid 2px $hvid;
+
+        .home_section {
+            background: no-repeat center fixed;
+            background-image: url("../img/baugrunds_billeder/WebProjekter_billede.png");
+            background-size: cover;
+        }
+
+        .projekter_section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: $sort;
+
+            border-top: solid #ffff 2px;
+
+
+            .projekter_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                height: 25vh;
+
+                margin: 5vh 0;
+
+                .web_ikoner {
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 55%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    // accordion
+    .accordion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        margin-bottom: 10vh;
+
+        width: 60%;
+
+        box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.5);
+
+
+        .projekter_accordion_section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 350px;
+            width: 100%;
+
+            // background-color: rgb(57, 71, 71);
+            padding: 50px;
+
+            .projekter_accordion_section_tekst {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                height: 100%;
+                width: 50%;
+
+                a {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    text-decoration: none;
+
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #caa052;
+
+                    gap: 10px;
+
+                    img {
+                        width: 10px;
+                    }
+                }
+            }
+
+            .projekter_accordion_section_img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        li {
+            list-style: none;
+            width: 100%;
+            padding: 10px;
+            border-top: solid #ffff 2px;
+            border-bottom: solid #ffff 2px;
+            background-color: #1E1E1E;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            color: $hvid;
+
+        }
+
+        label::before {
+            content: '+';
+            color: #caa052;
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .accordion_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+
+            color: #555;
+            padding: 0 10px;
+            line-height: 26px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s, padding 0.5s;
+
+            .accordion_content_tekst_box {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                width: 50%;
+                gap: 10px;
+            }
+
+            .accordion_content_box {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+
+                .accordion_content_logo {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    width: 100%;
+
+                    h4{
+                        margin-bottom: 30px;
+                    }
+
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .accordion_content_ikon {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    
+                    width: 100%;
+
+                    h4{
+                        margin-bottom: 30px;
+                    }
+
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+
+        }
+
+        input[type="radio"]:checked+label+.accordion_content {
+            max-height: 400px;
+            padding: 10px 10px 20px;
+        }
+
+        input[type="radio"]:checked+label::before {
+            content: '-';
+            color: #caa052;
+        }
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $hvid;
     }
 }

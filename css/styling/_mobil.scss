@@ -122,4 +122,35 @@
         }
 
     }
+
+    .webProjekter_body {
+        .webProjekter {
+            .home_section {
+                height: 80vh;
+
+                .home_content {
+                    width: 80%;
+
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                .pil {
+                    margin: 5vh 0;
+                    padding: 0;
+
+                    img {
+                        width: 75%;
+                    }
+                }
+            }
+
+            .projekter_section {
+                .projekter_content {
+                    height: 15vh;
+                }
+            }
+        }
+    }
 }

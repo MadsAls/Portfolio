@@ -94,6 +94,12 @@ h4 {
   color: white;
 }
 
+h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #CAA052;
+}
+
 hr {
   width: 60%;
 }
@@ -653,6 +659,189 @@ main .content .kontakt_section .map .google_map {
   border-radius: 5%;
 }
 
+.webProjekter_body header nav ul {
+  display: none;
+}
+.webProjekter_body .webProjekter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: solid 2px white;
+}
+.webProjekter_body .webProjekter .home_section {
+  background: no-repeat center fixed;
+  background-image: url("../img/baugrunds_billeder/WebProjekter_billede.png");
+  background-size: cover;
+}
+.webProjekter_body .webProjekter .projekter_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #171717;
+  border-top: solid white 2px;
+}
+.webProjekter_body .webProjekter .projekter_section .projekter_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 25vh;
+  margin: 5vh 0;
+}
+.webProjekter_body .webProjekter .projekter_section .projekter_content .web_ikoner {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+}
+.webProjekter_body .webProjekter .projekter_section .projekter_content .web_ikoner img {
+  width: 100%;
+}
+.webProjekter_body .accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  width: 60%;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.webProjekter_body .accordion .projekter_accordion_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  width: 100%;
+  padding: 50px;
+}
+.webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 50%;
+}
+.webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_tekst a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #caa052;
+  gap: 10px;
+}
+.webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_tekst a img {
+  width: 10px;
+}
+.webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.webProjekter_body .accordion .projekter_accordion_section .projekter_accordion_section_img img {
+  width: 100%;
+}
+.webProjekter_body .accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
+  background-color: #1E1E1E;
+}
+.webProjekter_body .accordion label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+.webProjekter_body .accordion label::before {
+  content: "+";
+  color: #caa052;
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.webProjekter_body .accordion input[type=radio] {
+  display: none;
+}
+.webProjekter_body .accordion .accordion_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_tekst_box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_logo h4 {
+  margin-bottom: 30px;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_logo img {
+  width: 50%;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_ikon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_ikon h4 {
+  margin-bottom: 30px;
+}
+.webProjekter_body .accordion .accordion_content .accordion_content_box .accordion_content_ikon img {
+  width: 50%;
+}
+.webProjekter_body .accordion input[type=radio]:checked + label + .accordion_content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+.webProjekter_body .accordion input[type=radio]:checked + label::before {
+  content: "-";
+  color: #caa052;
+}
+.webProjekter_body p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}
+
 @media screen and (max-width: 1024px) {
   .map {
     display: none;
@@ -729,5 +918,24 @@ main .content .kontakt_section .map .google_map {
   }
   main .content .kontakt_section .kontakt_content .map {
     display: none;
+  }
+  .webProjekter_body .webProjekter .home_section {
+    height: 80vh;
+  }
+  .webProjekter_body .webProjekter .home_section .home_content {
+    width: 80%;
+  }
+  .webProjekter_body .webProjekter .home_section .home_content p {
+    width: 100%;
+  }
+  .webProjekter_body .webProjekter .home_section .pil {
+    margin: 5vh 0;
+    padding: 0;
+  }
+  .webProjekter_body .webProjekter .home_section .pil img {
+    width: 75%;
+  }
+  .webProjekter_body .webProjekter .projekter_section .projekter_content {
+    height: 15vh;
   }
 }/*# sourceMappingURL=style.css.map */
