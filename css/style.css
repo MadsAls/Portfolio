@@ -138,7 +138,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 10vw;
+  width: 21.3vh;
   height: 100%;
 }
 header nav {
@@ -147,7 +147,7 @@ header nav {
   align-items: center;
   flex-direction: column;
   height: 90%;
-  width: 75%;
+  width: 80%;
 }
 header nav hr {
   width: 7vw;
@@ -168,8 +168,7 @@ header nav ul li {
   justify-content: start;
 }
 header nav ul li a {
-  font-size: 1.2vw;
-  font-size: calc(16px + 0.390625vw);
+  font-size: 2.7vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   /*skal ændres*/
   text-decoration: none;
@@ -274,7 +273,7 @@ footer .footer_section .footer_content .footer_media {
   flex-direction: column;
   width: 12%;
   min-width: 300px;
-  height: 35%;
+  height: 40%;
 }
 footer .footer_section .footer_content .footer_media .media_ikoner {
   display: flex;
@@ -641,13 +640,13 @@ main .content .kontakt_section .kontakt_content .info .find_mig {
   align-items: start;
   flex-direction: column;
   width: 100%;
-  height: 14%;
+  height: 18%;
 }
 main .content .kontakt_section .kontakt_content .info .find_mig .media_ikoner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 30%;
 }
 main .content .kontakt_section .map {
   width: 40%;

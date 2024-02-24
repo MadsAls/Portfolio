@@ -7,7 +7,10 @@ header {
     align-items: center;
     flex-direction: column;
 
-    width: 10vw;
+    // width: 10vw;
+    // width: 200px;
+    width: 21.3vh;
+    
     // height: 100vh;
     height: 100%;
 
@@ -20,7 +23,7 @@ header {
         flex-direction: column;
 
         height: 90%;
-        width: 75%;
+        width: 80%;
 
         // background-color: rgba(128, 78, 123, 0.3);
 
@@ -50,8 +53,9 @@ header {
                 justify-content: start;
 
                 a {
-                    font-size: 1.2vw;
-                    font-size: calc(16px + 0.390625vw);
+                    // font-size: 1.2vw;
+                    font-size: 2.7vh;
+                    // font-size: 26px;
 
                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                     /*skal ændres*/

@@ -17,7 +17,7 @@ window.onload = function () {
         768: {
           slidesPerView: 2,
         },
-        1024: {
+        1040: {
           slidesPerView: 3,
         },
       },
