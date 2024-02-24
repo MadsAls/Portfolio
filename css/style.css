@@ -556,7 +556,7 @@ main .content .programmer_section .programmer_content .programmer_ikoner .progra
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2.5vh;
-  width: 19%;
+  width: 25%;
 }
 main .content .programmer_section .programmer_content .programmer_ikoner .programmer_ikon_boks .ikon_boks {
   display: flex;
