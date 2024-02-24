@@ -713,7 +713,7 @@ main .content .kontakt_section .map .google_map {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 350px;
+  height: 400px;
   width: 100%;
   padding: 50px;
 }
