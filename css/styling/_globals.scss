@@ -122,6 +122,26 @@ hr {
     width: 60%;
 }
 
+//Scrollbar på siden
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $sort; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+      background: $hvid; 
+      border-radius: 10px;
+
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: $gul; 
+  }
+
+
 @media screen and (max-width: 768px) {
     .container {
         width: 80%;

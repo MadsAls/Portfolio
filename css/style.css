@@ -123,6 +123,23 @@ hr {
   width: 60%;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CAA052;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 80%;
