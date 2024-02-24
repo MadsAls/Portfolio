@@ -16,9 +16,14 @@
                     width: 100%;
                 }
             }
+
             .pil {
                 margin: 5vh 0;
                 padding: 0;
+
+                img {
+                    width: 75%;
+                }
             }
         }
 
@@ -32,15 +37,25 @@
 
                         gap: 10vw;
 
+                        height: 70vh;
+
                         .omMig_tekst {
                             display: flex;
                             // justify-content: space-between;
                             align-items: center;
 
                             width: 100%;
+                            height: 100%;
 
                             p {
                                 text-align: center;
+                            }
+                        }
+
+                        .billedet_section {
+
+                            img{
+                                width: 100%;
                             }
                         }
 
@@ -51,16 +66,17 @@
             }
 
             .programmer_section {
-                height: 100vh;
+                height: 150vh;
+
                 .programmer_content {
-                    .programmer_ikoner{
+                    .programmer_ikoner {
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
 
-                        gap: 20px;
+                        gap: 70px;
 
-                        .programmer_ikon_boks{
+                        .programmer_ikon_boks {
                             width: 80%;
                         }
                     }
@@ -85,6 +101,7 @@
 
                         .find_mig {
                             height: 30%;
+
                             .media_ikoner {
 
                                 width: 50%;
