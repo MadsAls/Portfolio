@@ -919,6 +919,17 @@ main .content .kontakt_section .map .google_map {
   main .content .omMig_section .omMig_content .omMig .billedet_section img {
     width: 100%;
   }
+  main .content .omMig_section .tidslinje {
+    height: 100vh;
+  }
+  main .content .omMig_section .tidslinje .swiper {
+    width: 100%;
+    height: 650px;
+    /*TODO!  Juster højten*/
+  }
+  main .content .omMig_section .tidslinje .swiper-content__tekst {
+    padding: 18px;
+  }
   main .content .programmer_section {
     height: 130vh;
   }

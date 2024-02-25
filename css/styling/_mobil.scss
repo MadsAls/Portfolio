@@ -62,7 +62,21 @@
                     }
 
                 }
+                .tidslinje {
+                    height: 100vh;
 
+                    .swiper {
+                        width: 100%;
+                        height: 650px;
+                        /*TODO!  Juster højten*/
+                    
+                        &-content {
+                            &__tekst{
+                                padding: 18px;
+                            }
+                        }
+                    }
+                }
             }
 
             .programmer_section {
