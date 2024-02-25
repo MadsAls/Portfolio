@@ -13,7 +13,7 @@ var Slides = (function () {
                 overskrift: "2022 - 2023",
                 work: 'Capra Robotics',
                 ikon: 'img/ikoner/work.svg',
-                tekst_overskrift: "Robot teknikter",
+                tekst_overskrift: "Robot tekniker",
                 tekst: "Som robot tekniker ved Capra Robotics, sad jeg i Hardware afdelingen, hvor jeg reparede og optimeret elektroniske systemer i deres robotter. ",
             },
             {

@@ -356,7 +356,7 @@ main .home_section {
   width: 100%;
   height: 100vh;
   background: no-repeat center fixed;
-  background-image: url("../img/baugrunds_billeder/Forside_billede.png");
+  background-image: url("../img/baugrunds_billeder/forside_overlay.png");
   background-size: cover;
 }
 main .home_section .home_content {
@@ -559,7 +559,7 @@ main .content .programmer_section {
   width: 100%;
   height: 60vh;
   background: no-repeat center fixed;
-  background-image: url("../img/baugrunds_billeder/Forside_programmer_billede.png");
+  background-image: url("../img/baugrunds_billeder/Forside_programmer_billede1.png");
   background-size: cover;
 }
 main .content .programmer_section .programmer_billede {
@@ -707,7 +707,7 @@ main .content .kontakt_section .map .google_map {
 }
 .webProjekter_body .webProjekter .home_section {
   background: no-repeat center fixed;
-  background-image: url("../img/baugrunds_billeder/WebProjekter_billede.png");
+  background-image: url("../img/baugrunds_billeder/projekter_overlay.png");
   background-size: cover;
 }
 .webProjekter_body .webProjekter .projekter_section {
