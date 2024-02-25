@@ -3,34 +3,39 @@ var Slides = (function () {
     function Slides() {
         const slides = [
             {
-                overskrift: "Aug 2023 - ",
-                work: 'Skolen her',
+                overskrift: "2023 - ",
+                work: 'Erhvervsakademi Aarhus',
                 ikon: "img/ikoner/skole.svg",
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
+                tekst_overskrift: "Multimediedesigner",
+                tekst: "Som elev ved Erhvervsakademi Aarhus som Multimediedesigner er jeg igang med at lærer forskellige metoder til at opbygge hjemmesider og andet content, så som: <br> - Design <br> - UX, UI <br> - Programmering i HTML, CSS og JavaScript",
             },
             {
-                overskrift: "Aug 2022 - Jun 2023",
-                work: 'Arbejde navn',
+                overskrift: "2022 - 2023",
+                work: 'Capra Robotics',
                 ikon: 'img/ikoner/work.svg',
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
+                tekst_overskrift: "Robot teknikter",
+                tekst: "Som robot tekniker ved Capra Robotics, sad jeg i Hardware afdelingen, hvor jeg reparede og optimeret elektroniske systemer i deres robotter. ",
             },
             {
-                overskrift: "Aug 2021 - Jun 2022",
-                work: 'Arbejde navn',
+                overskrift: "2021 - 2022",
+                work: 'Forsvarets Vedligeholdelsestjeneste',
                 ikon: 'img/ikoner/work.svg',
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
+                tekst_overskrift: "Elektronikfagtekniker svend",
+                tekst: "Som svend i Forsvarets Vedligeholdelsestjeneste Sensor- & optronikværkstedet Frederikshavn (den civile del). MCM afdeling (Mine Counter Measures). Hvor mine arbejdes opgaver var: <br> Fejlfinding, reparation og test af undervandsdroner. Derudover uddannelsesansvarlig for vores to nye lærlinge og sørger for at de i det daglige får relevante opgaver og fungeret som mentor for dem.",
             },
             {
-                overskrift: "Aug 2018 - Jun 2021",
-                work: 'Skolen her',
+                overskrift: "2017 - 2021",
+                work: 'Aarhus Tech',
                 ikon: 'img/ikoner/skole.svg',
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
+                tekst_overskrift: "Elektronikfagtekniker",
+                tekst: "Gik på Aarhus Tech som elektronikfagtekniker og kom i lærer ved Forsvarets Vedligeholdelsestjeneste som civil tekniker lærling, hvor jeg hjalp flåden med at fixse deres ødelagte udstyr. Arbejdet har været på Flådestationen, på deres værksted og på skibe samt rejsearbejde på andre af forsvarets kaserner. ",
             },
             {
-                overskrift: "Aug 2017 - Jun 2017",
-                work: 'Højskole navn',
-                ikon: 'img/ikoner/musik.svg',
-                tekst: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, repudiandae?",
+                overskrift: "2016 - 2017",
+                work: 'Bilka Tilst',
+                ikon: 'img/ikoner/work.svg',
+                tekst_overskrift: "Deltidsarbejder",
+                tekst: "Arbejdet i Bilka Tilst i  den Kolonial afdeling, som vare opfylder på deltid.",
             },
 
         ];
@@ -49,6 +54,7 @@ var Slides = (function () {
                                             </div>
                                         </div>
                                         <div class="swiper-content__tekst">
+                                        <h3 class="swiper-content__workOverskrift">${slide.tekst_overskrift}</h3>
                                             <p>${slide.tekst}</p>
                                         </div>
                                     </div>

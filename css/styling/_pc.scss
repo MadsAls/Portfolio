@@ -183,18 +183,17 @@ main {
                 align-items: center;
                 flex-direction: column;
 
-                height: 60vh;
+                height: 75vh;
                 width: 100%;
 
                 margin: 5vh 0;
 
                 .swiper {
                     width: 100%;
-                    height: 480px;
+                    height: 650px;
                     /*TODO!  Juster højten*/
 
                     &-slide {
-                        /*&-slide = .swiper-slide*/
                         width: 400px;
                         height: 100%;
                     }
@@ -269,10 +268,16 @@ main {
 
                         &__tekst {
                             display: flex;
+                            flex-direction: column;
                             width: 80%;
                             padding: 30px;
                             background-color: $hvid;
                             border-radius: 10px;
+
+                            h3 {
+                                color: $sort;
+                                margin-bottom: 10px;
+                            }
 
                             p {
                                 color: $sort;
@@ -282,7 +287,6 @@ main {
                     }
 
                     &-scrollbar-horizontal {
-                        /*TODO! FIX kan ikke snakke med dem*/
                         background-color: white;
 
                     }
