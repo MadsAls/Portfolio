@@ -183,14 +183,14 @@ main {
                 align-items: center;
                 flex-direction: column;
 
-                height: 75vh;
+                // height: 75vh;
                 width: 100%;
 
                 margin: 5vh 0;
 
                 .swiper {
                     width: 100%;
-                    height: 650px;
+                    // height: 650px;
                     /*TODO!  Juster højten*/
 
                     &-slide {
@@ -273,6 +273,8 @@ main {
                             padding: 30px;
                             background-color: $hvid;
                             border-radius: 10px;
+
+                            margin-bottom: 20px;
 
                             h3 {
                                 color: $sort;
