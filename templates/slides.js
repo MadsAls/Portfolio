@@ -18,7 +18,7 @@ var Slides = (function () {
             },
             {
                 overskrift: "2021 - 2022",
-                work: 'Forsvarets Vedligeholdelsestjeneste',
+                work: 'Forsvarets',
                 ikon: 'img/ikoner/work.svg',
                 tekst_overskrift: "Elektronikfagtekniker svend",
                 tekst: "Som svend i Forsvarets Vedligeholdelsestjeneste Sensor- & optronikværkstedet Frederikshavn (den civile del). MCM afdeling (Mine Counter Measures). Hvor mine arbejdes opgaver var: <br> Fejlfinding, reparation og test af undervandsdroner. Derudover uddannelsesansvarlig for vores to nye lærlinge og sørger for at de i det daglige får relevante opgaver og fungeret som mentor for dem.",
