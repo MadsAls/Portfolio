@@ -904,7 +904,7 @@ main .content .kontakt_section .map .google_map {
     display: flex;
     flex-direction: column;
     gap: 10vw;
-    height: 70vh;
+    height: 85vh;
   }
   main .content .omMig_section .omMig_content .omMig .omMig_tekst {
     display: flex;
@@ -930,7 +930,7 @@ main .content .kontakt_section .map .google_map {
     padding: 18px;
   }
   main .content .programmer_section {
-    height: 130vh;
+    height: 145vh;
   }
   main .content .programmer_section .programmer_content {
     gap: 5%;
