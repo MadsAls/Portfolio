@@ -891,6 +891,9 @@ main .content .kontakt_section .map .google_map {
     width: 80%;
     gap: 10px;
   }
+  main .home_section .home_content h1 {
+    display: none;
+  }
   main .home_section .home_content p {
     width: 100%;
   }
