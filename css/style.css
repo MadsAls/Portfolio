@@ -433,15 +433,15 @@ main .content .omMig_section .omMig_content .omMig {
   align-items: center;
   width: 100%;
   height: 50vh;
-  margin: 5vh 0;
+  margin: 10vh 0;
 }
 main .content .omMig_section .omMig_content .omMig .omMig_tekst {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  height: 95%;
   width: 50%;
+  gap: 40px;
 }
 main .content .omMig_section .omMig_content .omMig .billedet_section img {
   width: 80%;
@@ -674,7 +674,7 @@ main .content .kontakt_section .kontakt_content .info .find_mig {
   align-items: start;
   flex-direction: column;
   width: 100%;
-  height: 18%;
+  gap: 20px;
 }
 main .content .kontakt_section .kontakt_content .info .find_mig .media_ikoner {
   display: flex;
