@@ -365,7 +365,7 @@ main .home_section .home_content {
   align-items: start;
   flex-direction: column;
   align-items: flex-start;
-  height: 60vh;
+  gap: 25px;
   margin-top: 12vh;
 }
 main .home_section .home_content h1 {
