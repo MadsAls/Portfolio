@@ -305,7 +305,7 @@ footer .footer_section .footer_content .footer_media {
   flex-direction: column;
   width: 12%;
   min-width: 300px;
-  height: 40%;
+  height: 50%;
 }
 footer .footer_section .footer_content .footer_media .media_ikoner {
   display: flex;
@@ -889,6 +889,7 @@ main .content .kontakt_section .map .google_map {
   }
   main .home_section .home_content {
     width: 80%;
+    gap: 10px;
   }
   main .home_section .home_content p {
     width: 100%;
