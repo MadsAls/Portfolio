@@ -531,8 +531,8 @@ main .content .omMig_section .tidslinje .swiper-content__ikon img {
 main .content .omMig_section .tidslinje .swiper-content__tekst {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  padding: 30px;
+  width: 90%;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -573,7 +573,7 @@ main .content .programmer_section .programmer_content {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  gap: 10%;
+  gap: 20px;
 }
 main .content .programmer_section .programmer_content .programmer_ikoner {
   display: flex;
