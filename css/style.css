@@ -885,11 +885,11 @@ main .content .kontakt_section .map .google_map {
     width: 80%;
   }
   main .home_section {
-    height: 70vh;
+    height: 90vh;
   }
   main .home_section .home_content {
     width: 80%;
-    gap: 10px;
+    gap: 25px;
   }
   main .home_section .home_content .h1_projekter {
     display: none;
@@ -968,10 +968,11 @@ main .content .kontakt_section .map .google_map {
     display: none;
   }
   .webProjekter_body .webProjekter .home_section {
-    height: 80vh;
+    height: 90vh;
   }
   .webProjekter_body .webProjekter .home_section .home_content {
     width: 80%;
+    gap: 25px;
   }
   .webProjekter_body .webProjekter .home_section .home_content p {
     width: 100%;
