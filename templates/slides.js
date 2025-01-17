@@ -3,7 +3,14 @@ var Slides = (function () {
     function Slides() {
         const slides = [
             {
-                overskrift: "2023 - ",
+                overskrift: "2024 - i 12 uger",
+                work: 'VS Automatic',
+                ikon: "img/ikoner/work.svg",
+                tekst_overskrift: "Multimediedesigner-Praktik",
+                tekst: "Jeb var i praktik ved VS Automatic. Som praktikant arbejdede jeg med grafisk design til web og video, og arbejdet med programmerne i Adobe pakke som: <br> - Photoshop <br> - Illustrator <br> - After Effects <br> - Premiere Pro",
+            },
+            {
+                overskrift: "2023 - 2025",
                 work: 'Erhvervsakademi Aarhus',
                 ikon: "img/ikoner/skole.svg",
                 tekst_overskrift: "Multimediedesigner",
